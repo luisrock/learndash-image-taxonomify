@@ -1,0 +1,58 @@
+.ld-course-image-taxonomify {
+    display: block;
+    -webkit-text-size-adjust: 100%;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato',sans-serif;
+    word-wrap: break-word;
+    font-size: .75em;
+    line-height: 1em;
+    box-sizing: border-box;
+    color: #0984e3 !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.trit-course-image-taxonomify {
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato',sans-serif;
+    color: #0984e3 !important;
+    font-weight: 800;
+}
+
+.trit-image-tax-container {
+    position: relative;
+  }
+  
+.trit-image-tax-text-block {
+    position: absolute;
+    font-size: 13px;
+    background: #0984e3;
+    color: #fff;
+    text-shadow: 0 1px rgb(0 0 0 / 30%);
+    padding: 3px 10px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.trit-image-tax-text-block-tr {
+    top: 0px;
+    right: 0px;
+}
+
+.trit-image-tax-text-block-tl {
+    top: 0px;
+    left: 0px;
+}
+
+.trit-image-tax-text-block-br {
+    bottom: 0px;
+    right: 0px;
+}
+
+.trit-image-tax-text-block-bl {
+    bottom: 0px;
+    left: 0px;
+}
