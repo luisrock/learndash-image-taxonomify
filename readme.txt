@@ -15,7 +15,7 @@ Image Taxonomify for LearnDash is the ultimate way to place a text box containin
 
 Main features:
 
-* define which taxonomy term to show on top of the course image (tag,category,etc) or select the taxonomy created by the plugin (ld_course_box)
+* define which taxonomy term to show on top of the course image (tag,category,etc) or select the custom taxonomy created by the plugin (ld_course_box)
 * select the block text position on the course image (top/bottom left/right)
 * set a custom text if/when there is no taxonomy term for the course (or leave blank)
 * define basic styling rules (text color, background color, font size, uppercase)
@@ -39,10 +39,11 @@ That's the goal, but we cannot be sure. There are so many themes! If you have an
 
 = Have feedback or a feature request? =
 
-* We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins! Just drop us an email with your suggestion.
+We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins! Just drop us an email with your suggestion.
 
 == Screenshots ==
-1. Image Taxonomify on the grid
+1. Image Taxonomify example
+2. Image Taxonomify on the grid 
 2. Admin settings page
 
 == Changelog ==
