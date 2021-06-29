@@ -52,16 +52,16 @@ function trit_admin_page() {
 
             <div class="trit-form-fields-label">
                 <?php esc_html_e( 'Select which taxonomy term to show on top of the course image', 'image-taxonomify' ); ?>
-                <span>* <?php esc_html_e( 'the first term of the selected taxonomy will be displayed. Suggestion: select "ld_course_box", a custom taxonomy for LearnDash courses created specifically for this feature. Then, on the course edit page, add only one term on the "Course Box Text" field, so you know exactly what will be displayed.', 'image-taxonomify' ); ?></span>
+                <span>* <?php esc_html_e( 'the first term of the selected taxonomy will be displayed. Suggestion: select "ld_course_box", a custom taxonomy for LearnDash courses created specifically for this feature. Then, on each course edit page, add only one term on the "Course Box Text" field, so you know exactly what will be displayed.', 'image-taxonomify' ); ?></span>
             </div>
             <div class="trit-form-fields-group">
                 <div class="trit-form-div-select">
                     <label>
                         <select name="<?php echo esc_attr( 'trit_which_taxonomy' ); ?>">
                             <?php foreach(get_object_taxonomies( 'sfwd-courses') as $tax) { ?>
-                                <option value="<?= $tax; ?>"
+                                <option value="<?php echo esc_attr($tax); ?>"
                                         <?php selected($tax, get_option('trit_which_taxonomy'), true); ?>>
-                                    <?= $tax; ?>
+                                    <?php echo esc_html($tax); ?>
                                 </option>
                             <?php } ?>
                         </select>
