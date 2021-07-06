@@ -1,5 +1,12 @@
 <?php
 
+
+function is_buddyboss_theme() {
+
+	$theme = wp_get_theme();
+	return strpos($theme->name, 'BuddyBoss') !== false || strpos($theme->parent_theme, 'BuddyBoss') !== false;
+}
+
 function trit_image_grid($item_html, $post, $shortcode_atts, $user_id) {
 
 
@@ -51,6 +58,9 @@ function trit_image_grid($item_html, $post, $shortcode_atts, $user_id) {
 		return $item_html;
 	}
 	$div_container->setAttribute('class', 'trit-image-tax-container');
+	if (is_buddyboss_theme()) {
+		$div_container->setAttribute('style', 'position:initial;');  
+	}
 
 	//create text block
 	$text_block = $dom->createElement('div', $text);
