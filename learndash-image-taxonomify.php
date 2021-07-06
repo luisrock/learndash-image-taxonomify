@@ -5,7 +5,7 @@
  * Description: Image Taxonomify for Learndash is the ultimate way to place a text box containing taxonomy text (category,tag,etc) on top of your LearnDash course image grid.
  * Author: Luis Rock
  * Author URI: https://wptrat.com/
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: image-taxonomify
  * Domain Path: /languages
  * License: GNU General Public License v3.0
