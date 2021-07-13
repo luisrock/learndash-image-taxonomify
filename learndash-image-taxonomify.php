@@ -5,7 +5,7 @@
  * Description: Image Taxonomify for Learndash is the ultimate way to place a text box containing taxonomy text (category,tag,etc) on top of your LearnDash course image grid.
  * Author: Luis Rock
  * Author URI: https://wptrat.com/
- * Version: 1.0.1
+ * Version: 1.1.0
  * Text Domain: image-taxonomify
  * Domain Path: /languages
  * License: GNU General Public License v3.0
@@ -59,16 +59,19 @@ function trit_enqueue_admin_script( $hook ) {
 add_action( 'admin_enqueue_scripts', 'trit_enqueue_admin_script' );
 
 
-//FRONTEND CSS (only for pages with ld course list shortcode) - copied and adapted from learndash
+//FRONTEND CSS (only for BuddyBoss or pages with ld course list shortcode) - copied and adapted from learndash
 function trit_enqueue_script() {
 	global $post, $ld_course_grid_assets_needed;
-
+    wp_register_style('trit_style', plugins_url('assets/css/trit.css',__FILE__ ));
+    if (is_buddyboss_theme()) { 
+        wp_enqueue_style('trit_style');
+    }
 	if (  ( is_a( $post, 'WP_Post' ) && ( preg_match( '/(\[ld_\w+_list)/', $post->post_content ) 
             || preg_match( '/wp:learndash\/ld-course-list/', $post->post_content ) ) 
           )
 		  || ( isset( $ld_course_grid_assets_needed ) && $ld_course_grid_assets_needed === true )
 	    ) {
-        wp_enqueue_style('trit_style', plugins_url('assets/css/trit.css',__FILE__ ));        
+        wp_enqueue_style('trit_style');        
     }
 }
 add_action( 'wp_enqueue_scripts', 'trit_enqueue_script' );

@@ -4,14 +4,14 @@ Tags: learndash, education, elearning, lms, learning
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-**Image Taxonomify for LearnDash** is the ultimate way to place a text box containing taxonomy text (category,tag,etc) on top of your LearnDash course image grid.
+**Image Taxonomify for LearnDash** allows you to place a text box with taxonomy text (category, tag, etc) on top of your LearnDash course image grid.
 
 == Description ==
-Image Taxonomify for LearnDash is the ultimate way to place a text box containing taxonomy text (category,tag,etc) on top of your LearnDash course image grid.
+Image Taxonomify for LearnDash allows you to place a text box with taxonomy text (category, tag, etc) on top of your LearnDash course image grid.
 
 Main features:
 
@@ -20,6 +20,7 @@ Main features:
 * set a custom text if/when there is no taxonomy term for the course (or leave blank)
 * define basic styling rules (text color, background color, font size, uppercase)
 * select who can see (all, non-logged only or logged only)
+* works also with BuddyBoss custom course grid
 
 
 == Installation ==
@@ -47,6 +48,9 @@ We are open to your suggestions and feedback. Thank you for using or trying out 
 2. Admin settings page
 
 == Changelog ==
+= 1.1.0 = 
+* Support for BuddyBoss course grid.
+
 = 1.0.1 = 
 * Fix css for BuddyBoss theme.
 
@@ -56,6 +60,9 @@ We are open to your suggestions and feedback. Thank you for using or trying out 
  
 == Upgrade Notice ==
  
+= 1.1.0 =
+Add support for BuddyBoss custom course grid.
+
 = 1.0.1 =
 Important upgrade for BuddyBoss theme users.
  
